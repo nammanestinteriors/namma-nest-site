@@ -1,1 +1,108 @@
+:root {
+    --gold: #C5A059;
+    --dark: #1a1a1a;
+    --light: #f9f9f9;
+}
 
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+/* Nav */
+nav {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    position: sticky;
+    top: 0; z-index: 1000;
+}
+
+.logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; letter-spacing: 3px; font-weight: 700; }
+.nav-links i { font-size: 1.2rem; margin-left: 20px; color: var(--gold); }
+
+/* Hero */
+header {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; justify-content: center;
+    color: white;
+}
+
+h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; }
+.gold-text { color: var(--gold); }
+
+/* Enquiry Section */
+.enquiry-section {
+    padding: 60px 5%;
+    background: #f0f0f0;
+    margin-top: -100px; /* Overlap effect */
+}
+
+.glass-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+form { display: grid; gap: 15px; margin-top: 30px; }
+.input-row { display: flex; gap: 15px; }
+input, select, textarea {
+    width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;
+}
+
+.submit-btn {
+    background: var(--gold);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover { background: var(--dark); }
+
+/* WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    background: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex; align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .input-row { flex-direction: column; }
+    h1 { font-size: 2rem; }
+    .enquiry-section { margin-top: 20px; }
+}
