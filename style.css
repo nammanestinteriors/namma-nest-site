@@ -9,110 +9,66 @@
 * { margin:0; padding:0; box-sizing: border-box; }
 body { font-family: 'Outfit', sans-serif; background: #fdfdfd; scroll-behavior: smooth; overflow-x: hidden; }
 
-/* Navbar */
+/* Navbar with Branding */
 .navbar {
     display: flex; justify-content: space-between; align-items: center;
     padding: 15px 8%; background: var(--white); position: sticky; top: 0; z-index: 1000;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
-.logo { font-size: 1.3rem; font-weight: 800; }
-.logo span { color: var(--teal); }
-.nav-links a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
-.btn-sm { background: var(--teal); color: white !important; padding: 8px 15px; border-radius: 8px; }
-
-/* Hero */
-.hero { display: grid; grid-template-columns: 1.2fr 1fr; padding: 60px 8%; gap: 40px; align-items: center; background: #fff; }
-h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; line-height: 1.1; margin: 20px 0; }
-.brand-highlight { color: var(--teal); font-style: italic; }
-.badge { background: #e0f2f1; color: var(--teal); padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
-.hero-image-container img { width: 100%; border-radius: 30px; box-shadow: 20px 20px 0px var(--lavender); }
-
-/* Services */
-.services-section { padding: 80px 8%; }
-.section-title { text-align: center; margin-bottom: 40px; }
-.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.service-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-.service-img { height: 200px; background-size: cover; background-position: center; }
-.service-info { padding: 20px; text-align: center; }
-
-/* Testimonials */
-.testimonials-section { padding: 60px 8%; background: #f0f4f8; }
-.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.test-card { background: white; padding: 30px; border-radius: 20px; border-left: 5px solid var(--lavender); }
-.test-card h4 { margin-top: 15px; color: var(--teal); font-size: 0.9rem; }
-
-/* Form & Quote Section */
-.quiz-section { padding: 80px 8%; }
-.quiz-container { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-
-/* Updated Input Box Layout */
-.input-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    text-align: left;
-}
-
-.input-box label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--teal); 
-    margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.full-width {
-    grid-column: span 2;
-}
-
-input, select { 
-    width: 100%; 
-    padding: 15px; 
-    border: 2px solid #eee; 
-    border-radius: 10px; 
-    font-family: inherit;
-}
-
-input:focus, select:focus {
-    border-color: var(--teal);
-    outline: none;
-}
-
-.submit-btn { 
-    width: 100%; 
-    padding: 18px; 
-    border: none; 
-    background: var(--gradient); 
+.logo { 
+    background: var(--teal); 
     color: white; 
-    border-radius: 10px; 
-    font-weight: 700; 
-    cursor: pointer; 
-    margin-top: 10px;
-    transition: 0.3s;
+    padding: 5px 15px; 
+    border-radius: 5px; 
+    font-weight: 800; 
+    display: inline-block;
 }
+.tagline { font-size: 0.7rem; color: #666; margin-top: 4px; font-weight: 600; }
+.nav-links a { text-decoration: none; color: var(--dark); margin-left: 20px; font-weight: 600; }
+.call-btn { color: var(--teal) !important; border: 2px solid var(--teal); padding: 5px 15px; border-radius: 5px; }
 
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,128,128,0.2);
-}
+/* Hero Spacing Fix */
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; padding: 100px 8%; gap: 40px; align-items: center; }
+.hero-btns { margin-top: 40px; display: flex; gap: 15px; } /* Added space above buttons */
 
-/* Buttons & WhatsApp */
-.btn-primary { background: var(--teal); color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: 600; display: inline-block; margin-bottom: 10px; }
-.btn-whatsapp { background: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: 600; display: inline-block; }
-.wa-float { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; z-index: 1000; text-decoration: none; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
+.brand-highlight { color: var(--teal); border-bottom: 4px solid var(--lavender); }
 
-/* MOBILE FIX */
+/* Service Cards (Fixed Images) */
+.services-section { padding: 80px 8%; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.service-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+.service-img-container { height: 200px; width: 100%; overflow: hidden; }
+.service-photo { width: 100%; height: 100%; object-fit: cover; }
+.service-info { padding: 20px; text-align: center; color: var(--teal); }
+
+/* Form Spacing Fix */
+.quiz-section { padding: 100px 8%; background: #f9f9f9; }
+.quiz-container { max-width: 650px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px; } /* Increased gap between boxes */
+
+.input-box { display: flex; flex-direction: column; text-align: left; }
+.input-box label { font-size: 0.75rem; font-weight: 700; color: var(--teal); margin-bottom: 8px; text-transform: uppercase; }
+input, select { padding: 12px; border: 2px solid #eee; border-radius: 8px; }
+.full-width { grid-column: span 2; }
+
+/* FAB Buttons */
+.fab-container { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 15px; z-index: 1000; }
+.fab-call, .fab-wa { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 1.4rem; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.fab-call { background: var(--teal); }
+.fab-wa { background: #25D366; }
+
+/* Buttons */
+.btn-primary { background: var(--teal); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: 700; }
+.btn-whatsapp { background: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: 700; }
+.submit-btn { width: 100%; padding: 18px; border: none; background: var(--gradient); color: white; font-weight: 700; border-radius: 8px; cursor: pointer; margin-top: 20px; }
+
+/* Mobile */
 @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; text-align: center; padding: 40px 5%; }
-    h1 { font-size: 2.2rem; }
-    .hero-image-container img { box-shadow: none; }
-    .navbar { padding: 15px 5%; }
-    .nav-links { display: none; }
-    
+    .hero { grid-template-columns: 1fr; text-align: center; padding: 60px 5%; }
+    .hero-image-container { display: none; }
+    .hero-btns { justify-content: center; flex-direction: column; }
     .form-grid { grid-template-columns: 1fr; }
     .full-width { grid-column: span 1; }
-    
-    .quiz-container { padding: 30px 20px; }
+    .nav-links { display: none; }
 }
