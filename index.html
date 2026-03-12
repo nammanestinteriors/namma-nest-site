@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namma Nest Interiors | Bespoke Designs in South Bangalore</title>
+    <title>Namma Nest Interiors | Premium Home Design South Bangalore</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">NAMMA NEST</div>
+    <nav class="navbar">
+        <div class="logo">NAMMA NEST <span>INTERIORS</span></div>
         <div class="nav-links">
-            <a href="mailto:nammanestinteriors@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="tel:+91 7019364047"><i class="fas fa-phone"></i></a>
+            <a href="#services">Services</a>
+            <a href="#quote" class="btn-sm">Get Free Estimate</a>
         </div>
     </nav>
 
-    <header>
-        <div class="hero-overlay">
-            <h1>Elevating Homes in <span class="gold-text">South Bangalore</span></h1>
-            <p>Premium Interior Solutions for Chandapura, Anekal & Electronic City.</p>
-            <a href="#enquiry" class="main-btn">Get Free Estimate</a>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Exclusive Design Partner</span>
+            <h1>Your Dream Home, <br>Crafted by <span class="brand-highlight">Namma Nest Interiors</span></h1>
+            <p>Bringing premium, end-to-end interior transformations to <strong>Chandapura, Anekal & Electronic City</strong>.</p>
+            <div class="hero-btns">
+                <a href="#quote" class="btn-primary">Calculate My Quote</a>
+                <a href="https://wa.me/91YOUR_PHONE_NUMBER" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" alt="Modern Living Room by Namma Nest Interiors">
         </div>
     </header>
 
-    <section id="enquiry" class="enquiry-section">
-        <div class="glass-card">
-            <h2>Start Your Design Journey</h2>
-            <p>Fill in your details, and we will send a customized quote to your Gmail.</p>
+    <section id="quote" class="quiz-section">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2>Plan Your Nest</h2>
+                <p>Complete this 30-second form to receive a personalized quote at <strong>nammanest.interiors@gmail.com</strong></p>
+            </div>
             
-            <form name="namma-nest-leads" method="POST" data-netlify="true">
-                <div class="input-row">
-                    <input type="text" name="client_name" placeholder="Your Name" required>
-                    <input type="tel" name="whatsapp_number" placeholder="WhatsApp Number" required>
+            <form name="enquiry-app" method="POST" data-netlify="true" class="pro-form">
+                <div class="form-grid">
+                    <div class="input-box">
+                        <label>Target Neighborhood</label>
+                        <select name="location" required>
+                            <option value="Chandapura">Chandapura</option>
+                            <option value="Anekal">Anekal</option>
+                            <option value="Attibele">Attibele</option>
+                            <option value="Electronic City">Electronic City</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label>Requirement</label>
+                        <select name="project_type">
+                            <option value="2BHK">2 BHK Apartment</option>
+                            <option value="3BHK">3 BHK Apartment</option>
+                            <option value="Villa">Independent Villa</option>
+                            <option value="Kitchen">Modular Kitchen Only</option>
+                        </select>
+                    </div>
+                    <div class="input-box full-width">
+                        <label>Contact Details</label>
+                        <input type="text" name="full_name" placeholder="Name" required>
+                        <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+                    </div>
                 </div>
-                
-                <select name="location" required>
-                    <option value="" disabled selected>Select Your Location</option>
-                    <option value="Chandapura">Chandapura</option>
-                    <option value="Anekal">Anekal</option>
-                    <option value="Attibele">Attibele</option>
-                    <option value="Electronic City">Electronic City</option>
-                </select>
-
-                <select name="requirement">
-                    <option value="" disabled selected>What are you looking for?</option>
-                    <option value="Full Home">Full Home Interior</option>
-                    <option value="Kitchen">Modular Kitchen</option>
-                    <option value="Wardrobes">Wardrobes & Storage</option>
-                </select>
-
-                <textarea name="message" placeholder="Tell us about your 2BHK/3BHK project details..."></textarea>
-                
-                <button type="submit" class="submit-btn">Get My Design Quote</button>
+                <button type="submit" class="submit-btn">Generate My Design Estimate</button>
             </form>
         </div>
     </section>
 
-    <a href="https://wa.me/91FILL_YOUR_PHONE_NUMBER?text=Hi%20Namma%20Nest,%20I'm%20interested%20in%20a%20design%20consultation" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-        <span>Chat with Designer</span>
-    </a>
-
     <footer>
-        <p>Namma Nest Interiors &copy; 2026 | Serving South Bangalore with Love</p>
+        <p>&copy; 2026 <strong>Namma Nest Interiors</strong>. Serving South Bangalore.</p>
     </footer>
 
 </body>
